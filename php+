@@ -1,0 +1,7 @@
+#!/bin/sh
+
+read -p "name_of_phpfile:" file
+
+php $file | tee a.html
+
+google-chrome a.html
